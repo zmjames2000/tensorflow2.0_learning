@@ -27,6 +27,7 @@ learning tensorflow2.0
     4. Maxout
     5. ReLU
     6. ELU
+    7. selu 是自带归一化的函数的
   
   05. 深度神经网络 方法1
     model = keras.models.Sequential()
@@ -35,4 +36,8 @@ learning tensorflow2.0
     model.add(keras.layers.Dense(1)) 
     
    06.实现批归一化  BatchNormalization()
+   07. 实现Dropout 
+        model.add(keras.layers.AlphaDropout(rate=0.5))
    
+   08. Wide and Deep 模型
+    

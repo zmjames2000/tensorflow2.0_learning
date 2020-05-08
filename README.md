@@ -9,4 +9,11 @@ learning tensorflow2.0
         from sklearn.preprocessing import StandardScaler
         
         
-02. 
+02. callbacks
+    callbacks = [
+        keras.callbacks.TensorBoard(logdir),
+        keras.callbacks.ModelCheckpoint(output_model_file, save_best_only=True),
+        keras.callbacks.EarlyStopping(patience=5, min_delta=1e-3),
+    ]
+ 
+ 03. 

@@ -40,4 +40,22 @@ learning tensorflow2.0
         model.add(keras.layers.AlphaDropout(rate=0.5))
    
    08. Wide and Deep 模型
+      01. 函数API, 功能API
+      02. 子函数API
+      03. 多输入, 
+        history = model.fit([x_train_scaler_wide, x_train_scaler_deep], y_train,
+                    epochs=100,
+                    validation_data=([x_vaild_scaler_wide, x_vaild_scaler_deep], y_vaild),
+                    callbacks=callbacks)
+      04. 多输出,
+        输出的时候 2个output
+       
+   09. 超参数搜索
+    01.网络搜索
+    02.随机搜索
+    03.遗传算法搜索
+    04.启发式搜索
+   
+   10.API
+      
     

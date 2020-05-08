@@ -15,5 +15,24 @@ learning tensorflow2.0
         keras.callbacks.ModelCheckpoint(output_model_file, save_best_only=True),
         keras.callbacks.EarlyStopping(patience=5, min_delta=1e-3),
     ]
+    
+    tensorboard --logdir=callbacks
  
- 03. 
+ 03. fetch_california_housing
+ 
+ 04. 激活函数
+    1. sigmoid
+    2. Leaky ReLU
+    3. tanh
+    4. Maxout
+    5. ReLU
+    6. ELU
+  
+  05. 深度神经网络 方法1
+    model = keras.models.Sequential()
+    for _ in range(20):
+        model.add(keras.layers.Dense(30, activation='relu', input_shape=x_train.shape[1:]))
+    model.add(keras.layers.Dense(1)) 
+    
+   06.实现批归一化  BatchNormalization()
+   
